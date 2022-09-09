@@ -15,13 +15,7 @@ const { Sider, Footer, Content } = Layout;
 const { Title, Text } = Typography;
 export default function RunCart() {
 
-  function closeCart()
-  {
-    debugger;
-    document.getElementById("sider").setAttribute("collapsed",true);
-
-    document.getElementById("cart").classList.remove("d-none");
-  }
+  
 
   return (
     <>
@@ -98,7 +92,7 @@ export default function RunCart() {
         >
           <div className="d-flex justify-content-between align-items-center py-3 px-3 borderGrey darkBlue" >
             <div className="d-flex align-items-center" >
-              <Button onClick={closeCart} icon={<CloseOutlined />} className="rounded-circle me-2" size="large" style={{ background: "#E1ECF9", color: "#4A6585" }}></Button>
+              <Button  icon={<CloseOutlined />} className="rounded-circle me-2" size="large" style={{ background: "#E1ECF9", color: "#4A6585" }}></Button>
               <Title level={5} className="m-0">Your Run Cart</Title>
             </div>
             <div className="d-flex align-items-center" ><p className="text-muted m-0">Requests inrun kitchen</p></div>
